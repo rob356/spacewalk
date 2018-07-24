@@ -7,6 +7,8 @@ from up2date_client.pkgplatform import getPlatform
 
 if getPlatform() == 'deb':
     from up2date_client.debUtils import *
+elif getPlatform() == 'pacman':
+    from up2date_client.pacmanUtils import *
 else:
     from up2date_client.rpmUtils import *
 

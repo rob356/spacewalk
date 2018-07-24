@@ -30,6 +30,10 @@ if getPlatform() == 'deb':
         os_release = dist_info['RELEASE']
         return os_name, os_version, os_release
 
+elif getPlarform() == 'pacman':
+    def _getOSVersionAndRelease():
+        return 'Arch', 'n/a', 'n/a'
+
 else:
     from up2date_client import transaction
     def _getOSVersionAndRelease():
