@@ -15,7 +15,7 @@ FILES		:= config gui gtk_compat hardware progress \
 		   rhnregGui rhnserver \
 		   messageWindow rhncli \
 		   rhnreg_constants \
-                   pkgplatform debUtils pkgUtils \
+                   pkgplatform pacmanUtils debUtils pkgUtils \
                    pmPlugin
 
 PYFILES 	:= $(addsuffix .py, $(FILES))
